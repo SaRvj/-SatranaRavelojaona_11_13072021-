@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from '../components/Header';
-import Background from '../media/background.png';
+import Background from '../assets/BannerHome.png';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 import LoadingPage from './LoadingPage';
