@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import APropos from './pages/APropos';
-import FicheLogement from './pages/FicheLogement';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import APropos from './pages/APropos.js';
+import FicheLogement from './pages/FicheLogement.js';
+import Home from './pages/Home.js';
+import NotFound from './pages/NotFound.js';
 
 const App = () => {
   return (
