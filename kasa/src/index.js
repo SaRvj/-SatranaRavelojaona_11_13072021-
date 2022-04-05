@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './styles/index.css';
 import Home from './pages/Home';
 import Apropos from './pages/Apropos';
@@ -12,12 +12,12 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Switch>
+      <Routes>
         <Route exact path="/" component={Home}/>
         <Route path="/aPropos" component={Apropos}/>
         <Route path="/logement/:id" component={Logement}/>
         <Route component={Error} />
-      </Switch>
+      </Routes>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
