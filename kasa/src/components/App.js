@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
-import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import Header from "./Header/Header.js";
+import Footer from "./Footer/Footer.js";
 import Home from "./Home/Home.js";
 import Accommodation from "./accommodation/Accommodation";
 import About from "./about/About";
