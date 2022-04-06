@@ -6,7 +6,7 @@ import Home from "./Home/Home.js";
 import Accommodation from "./accommodation/Accommodation";
 import About from "./about/About";
 import Error404 from "./error404/Error404";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //Ce composant montre et fait le routage de toute l'application
 
@@ -17,12 +17,12 @@ class App extends React.Component {
         <Router>
           <div className="main-container">
             <Header />
-            <Switch>
+            <Routes>
               <Route path="/" exact component={Home} />
               <Route path="/accommodation" component={Accommodation} />
               <Route path="/about" component={About} />
               <Route path="/" component={Error404} />
-            </Switch>
+            </Routes>
           </div>
           <Footer />
         </Router>
