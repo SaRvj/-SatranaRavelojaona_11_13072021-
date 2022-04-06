@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-//Ce composant affiche la première partie de la page d'accueil
+//Ce composant affiche la première partie de la page Home
 
 export default class Logo extends Component {
   render() {

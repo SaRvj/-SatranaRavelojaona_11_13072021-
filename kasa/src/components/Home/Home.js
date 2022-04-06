@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Section1 from "./Section1";
-import "./home.css";
-import Accommodations from "../accommodation/Accommodations";
+import "./Home.css";
+import Accommodations from "../FicheLogement/FicheLogement.js";
 
 //Ce composant est la vue de la page Home
 export default class Home extends Component {

@@ -3,9 +3,9 @@ import React from "react";
 import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
 import Home from "./Home/Home.js";
-import Accommodation from "./accommodation/Accommodation";
-import About from "./about/About";
-import Error404 from "./error404/Error404";
+import Accommodation from "./FicheLogement/FicheLogement.js";
+import About from "./APropos/APropos.js";
+import Error404 from "./Error404/Error404.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //Ce composant montre et fait le routage de toute l'application

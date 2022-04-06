@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { ReactComponent as Logo } from "../../img/logo.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
-import "./header.css";
+import "./Header.css";
 
 //Ce composant rend le "header" de chaque page
 

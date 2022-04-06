@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { ReactComponent as Logo } from "../../img/logo.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
-import "./footer.css";
+import "./Footer.css";
 
 //Ce composant affiche le "footer" de chaque page
 export default class Header extends Component {
