@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./about.css";
-import Dropdown from "../dropdown/Dropdown";
+import "./apropos.css";
+import Dropdown from "../Dropdown/Dropdown.js";
 
 //Ce composant est une vue de la page à propos
 export default class About extends Component {
