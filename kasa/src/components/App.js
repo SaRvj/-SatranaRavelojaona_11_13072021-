@@ -18,10 +18,10 @@ class App extends React.Component {
           <div className="main-container">
             <Header />
             <Routes>
-              <Route path="/" exact component={Home} />
-              <Route path="/accommodation" component={Accommodation} />
-              <Route path="/about" component={About} />
-              <Route path="/" component={Error404} />
+              <Route path="/" exact element={`${Home}`} />
+              <Route path="/accommodation" element={Accommodation} />
+              <Route path="/about" element={About} />
+              <Route path="/" element={Error404} />
             </Routes>
           </div>
           <Footer />
