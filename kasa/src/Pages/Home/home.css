@@ -1,0 +1,54 @@
+/*
+
+Version mobile
+
+*/
+
+/* Bannière */
+
+.homeBanner {
+  min-width: 280px;
+  max-width: 100%;
+  height: 111px;
+  margin: auto 20px;
+  position: relative;
+}
+
+.homeBannerImage {
+  object-fit: cover;
+  object-position: 60% 80%;
+  width: 100%;
+  filter: brightness(70%);
+  height: 100%;
+  border-radius: 10px;
+}
+
+.bannerText {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 22%;
+  left: 16px;
+  width: 78%;
+}
+
+/*
+
+Version desktop
+
+*/
+
+@media (min-width: 992px) {
+  .homeBanner {
+    width: 1280px;
+    height: 223px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .bannerText {
+    font-size: 48px;
+    top: 37%;
+    left: 20%;
+  }
+}
