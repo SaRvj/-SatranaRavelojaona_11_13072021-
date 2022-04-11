@@ -1,26 +1,31 @@
-import React, { Component } from "react";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { NavLink } from "react-router-dom";
-import "./Header.css";
+import logo from '../../assets/logo.svg'
+import './header.css'
+import { Component } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 //Ce composant rend le "header" de chaque page
-
 export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <NavLink to="/">
-          <Logo fill="#ff6060" className="header_logo" />
-        </NavLink>
-        <ul className="navbar">
-          <NavLink  activeclassname="current" className="nav-btn " to="/">
-            <li className="nav-li">Accueil</li>
-          </NavLink>
-          <NavLink  activeclassname="current" className="nav-btn" to="/about">
-            <li className="nav-li">A Propos</li>
-          </NavLink>
-        </ul>
+        <Link to="/">
+          <img
+            className="logo"
+            src={process.env.PUBLIC_URL + logo}
+            alt="Homepage Kasa"
+          />
+        </Link>
+        <nav className="nav">
+          <ul>
+            <NavLink className="navLink" to="/" exact>
+              <li>Accueil</li>
+            </NavLink>
+            <NavLink className="navLink" to="/about" exact>
+              <li>A propos</li>
+            </NavLink>
+          </ul>
+        </nav>
       </div>
-    );
+    )
   }
 }

@@ -1,21 +1,35 @@
-.copyright {
-    color: white;
+/* 
+
+mobile
+
+*/
+
+.footerBackground {
+  background: #000;
+  width: 100%;
+  margin-top: 200px;
+  height: 209px;
 }
-  
-.footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    height: 210px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+
+.footerContent {
+  padding-top: 62px;
+  text-align: center;
 }
-  
-.footer_logo {
-    width: 122px;
-    height: 40px;
+
+.footerCopyright {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 3%;
 }
-  
+
+/*
+
+Desktop 
+
+*/
+
+@media (min-width: 992px) {
+  .footerCopyright {
+    font-size: 24px;
+  }
+}

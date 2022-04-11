@@ -1,23 +1,56 @@
-import React, { Component } from "react";
-import "./dropdown.css";
-import arrow from "../../assets/arrow.svg";
+import { Component } from 'react'
+import openButton from '../../assets/openButton.svg'
+import closedButton from '../../assets/dropdownbtn.svg'
 
 //Ce composant est une Dropdown factory, utilisée dans la page À propos et la page Hébergement
 export default class Dropdown extends Component {
-  showDropdown(e) {
-    e.target.closest("div").children[1].classList.toggle("dropdown_arrow_hidden");
-    e.target.closest("div").children[2].classList.toggle("dropdown_hidden");
+  constructor(props) {
+    super(props)
+    this.state = {
+      toggle: false,
+      text: this.props.text,
+      className: this.props.className,
+    }
+  }
+
+  setToggle = () => {
+    this.state.openToggle
+      ? this.setState({ openToggle: false })
+      : this.setState({ openToggle: true })
   }
 
   render() {
     return (
-      <div className="dropdown_container" onClick={this.showDropdown}>
-        <h2 className="dropdown_title">{this.props.title}</h2>
-        <object className="dropdown_arrow dropdown_arrow_hidden" type="image/svg+xml" data={arrow} alt="dropdown_arrow">
-          {"Your browser does not support SVG "}
-        </object>
-        <p className={this.props.className + " dropdown_hidden"}>{this.props.description}</p>
+      <div className={`${this.state.className}Dropdown`}>
+        <div
+          className={`${this.state.className}DropdownVisible`}
+          onClick={this.setToggle}
+        >
+          <h3>{this.state.text.title}</h3>
+          {this.state.openToggle ? (
+            <img
+              className="toggleButton"
+              src={openButton}
+              alt="Toggle button"
+            />
+          ) : (
+            <img
+              className="toggleButton"
+              src={closedButton}
+              alt="Toggle button"
+            />
+          )}
+        </div>
+        <div
+          className={
+            this.state.openToggle
+              ? `${this.state.className}ToggleOpen`
+              : `${this.state.className}ToggleClose`
+          }
+        >
+          <div>{this.state.text.content}</div>
+        </div>
       </div>
-    );
+    )
   }
 }
