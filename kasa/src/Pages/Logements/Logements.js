@@ -2,7 +2,7 @@ import { Component } from 'react'
 import Header from '../../components/Header/Header.js'
 import Footer from '../../components/Footer/Footer.js'
 import Accomodation from '../../components/Logement/Logement.js'
-import data from '../../Data/Data'
+import data from '../../Data/data.json'
 import { withRouter } from 'react-router'
 import Carousel from '../../components/Carrousel/Carrousel'
 
