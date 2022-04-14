@@ -26,7 +26,7 @@ export default class Home extends Component {
     this.getAllLogements();
   }
 
-   getAllLogements = () => {
+  getAllLogements = () => {
     axios.get(`${this.url}`)
     .then ((response) => {
         //console.log("response", response.data);
